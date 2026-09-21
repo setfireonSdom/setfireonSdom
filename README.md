@@ -1,9 +1,15 @@
-<h1 align="center">Hello, I'm Dwight.</h1>
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=8B7355&height=170&text=Hello%2C%20I%27m%20Dwight.&fontColor=F7F3EE&fontSize=44&fontAlignY=38" alt="Hello, I'm Dwight." />
+</p>
 
 <p align="center">
   <a href="https://setfireonsdom.github.io/Blog/">
     <img src="https://readme-typing-svg.demolab.com?font=Noto+Sans+SC&weight=500&size=20&duration=6000&pause=1200&color=6E7681&center=true&vCenter=true&width=360&height=40&lines=Sharing+what+I+learn." alt="Sharing what I learn." />
   </a>
+</p>
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=py,r,git,bash,linux,apple,md,vscode" alt="Python, R, Git, Bash, Linux, Apple, Markdown, VS Code" />
 </p>
 
 ## 关于我
