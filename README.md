@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://setfireonsdom.github.io/Blog/">
-    <img src="https://readme-typing-svg.demolab.com?font=Noto+Sans+SC&weight=500&size=24&duration=6000&pause=1200&color=6E6E73&center=true&vCenter=true&width=600&lines=Sharing+what+I+learn." alt="Sharing what I learn." />
+    <img src="https://readme-typing-svg.demolab.com?font=Noto+Sans+SC&weight=500&size=20&duration=6000&pause=1200&color=6E7681&center=true&vCenter=true&width=360&height=40&lines=Sharing+what+I+learn." alt="Sharing what I learn." />
   </a>
 </p>
 
