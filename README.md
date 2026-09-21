@@ -1,8 +1,8 @@
-<h1 align="center">Hi, I'm Dwight 👋</h1>
+<h1 align="center">Hello, I'm Dwight.</h1>
 
 <p align="center">
   <a href="https://setfireonsdom.github.io/Blog/">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=2E86AB&center=true&vCenter=true&width=600&lines=Sharing+what+I+learn+%C2%B7+%E8%BE%B9%E5%AD%A6%E8%BE%B9%E5%86%99+%C2%B7+%E6%83%B3%E5%88%B0%E5%93%AA%E5%86%99%E5%88%B0%E5%93%AA" alt="Sharing what I learn · 边学边写 · 想到哪写到哪" />
+    <img src="https://readme-typing-svg.demolab.com?font=Noto+Sans+SC&weight=500&size=24&duration=6000&pause=1200&color=6E6E73&center=true&vCenter=true&width=600&lines=Sharing+what+I+learn." alt="Sharing what I learn." />
   </a>
 </p>
 
@@ -21,14 +21,9 @@
 - [Graphify 入門指南](https://setfireonsdom.github.io/Blog/posts/graphify-入门指南.html) · 2026-07-21
 <!-- BLOG-POST-LIST:END -->
 
-## 写些什么
-
-![教程](https://img.shields.io/badge/-%E6%95%99%E7%A8%8B-2E86AB?style=flat-square)
-![资讯](https://img.shields.io/badge/-%E8%B5%84%E8%AE%AF-4C9F70?style=flat-square)
-![专栏](https://img.shields.io/badge/-%E4%B8%93%E6%A0%8F-E8A33D?style=flat-square)
-![介绍](https://img.shields.io/badge/-%E4%BB%8B%E7%BB%8D-8E7CC3?style=flat-square)
-
 ## 找到我
 
-[![博客](https://img.shields.io/badge/%E5%8D%9A%E5%AE%A2-setfireonsdom.github.io%2FBlog-2E86AB?style=flat-square)](https://setfireonsdom.github.io/Blog/)
-[![GitHub](https://img.shields.io/badge/GitHub-setfireonSdom-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/setfireonSdom)
+<p align="center">
+  <a href="https://setfireonsdom.github.io/Blog/"><img src="https://img.shields.io/badge/%E5%8D%9A%E5%AE%A2-setfireonsdom.github.io%2FBlog-1D1D1F?style=flat-square&logo=quarto&logoColor=white" alt="博客" /></a>
+  <a href="https://github.com/setfireonSdom"><img src="https://img.shields.io/badge/GitHub-setfireonSdom-1D1D1F?style=flat-square&logo=github&logoColor=white" alt="GitHub" /></a>
+</p>
