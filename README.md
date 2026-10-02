@@ -27,10 +27,6 @@
 - [Graphify 入門指南](https://setfireonsdom.github.io/Blog/posts/graphify-入门指南.html) · 2026-07-21
 <!-- BLOG-POST-LIST:END -->
 
-## 日常在用
-
-<img src="https://skillicons.dev/icons?i=py,r,git,bash,linux,apple,md,vscode" alt="Python, R, Git, Bash, Linux, Apple, Markdown, VS Code" />
-
 ## 找到我
 
 <a href="https://setfireonsdom.github.io/Blog/"><img src="https://img.shields.io/badge/%E5%8D%9A%E5%AE%A2-setfireonsdom.github.io%2FBlog-8B7355?style=flat&logo=quarto&logoColor=white" alt="博客" /></a>
