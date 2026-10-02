@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360"
+     viewBox="0 0 1200 360" role="img" aria-label="边学边写 · 学到的整理成文章分享">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="270" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#9FA9B3"/>
+      <stop offset="0.6" stop-color="#C9C7BF"/>
+      <stop offset="1" stop-color="#EFE6D4"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="830" cy="210" r="600" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FDF6E6"/>
+      <stop offset="1" stop-color="#FDF6E6" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="sea" x1="0" y1="252" x2="0" y2="342" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F6F0E2" stop-opacity="0"/>
+      <stop offset="0.3" stop-color="#F6F0E2" stop-opacity="0.7"/>
+      <stop offset="0.72" stop-color="#EAE3D4" stop-opacity="0.96"/>
+      <stop offset="1" stop-color="#EAE3D4"/>
+    </linearGradient>
+    <linearGradient id="rule" x1="72" y1="0" x2="154" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#A9762E"/>
+      <stop offset="1" stop-color="#A9762E" stop-opacity="0.3"/>
+    </linearGradient>
+    <filter id="soft" x="-15%" y="-70%" width="130%" height="240%">
+      <feGaussianBlur stdDeviation="11"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="360" fill="url(#sky)"/>
+  <rect width="1200" height="360" fill="url(#glow)" opacity="0.55">
+      <animate attributeName="opacity" values="0.55;0.8;0.55" dur="18s"
+               repeatCount="indefinite"/></rect>
+
+  <path d="M0,254 L70,246 L140,250 L215,240 L268,246 L330,212 L374,240 L430,248 L500,242 L560,250 L640,202 L708,240 L760,248 L830,242 L900,250 L958,238 L1002,212 L1062,242 L1120,250 L1200,244 L1200,292 L0,292 Z" fill="#ADB5B9"/>
+  <path d="M0,272 C180,252 360,264 540,254 C720,244 900,260 1060,250 L1200,256 L1200,308 L0,308 Z" fill="#F6F0E2" opacity="0.5" filter="url(#soft)"/>
+  <path d="M0,270 L90,258 L152,264 L200,226 L264,258 L330,250 L400,262 L470,252 L520,218 L592,254 L660,264 L740,254 L800,262 L880,220 L942,252 L1012,262 L1090,250 L1200,260 L1200,304 L0,304 Z" fill="#8D9397"/>
+  <path d="M0,290 C200,266 400,280 600,270 C800,260 1000,274 1200,266 L1200,330 L0,330 Z" fill="#F6F0E2" opacity="0.5" filter="url(#soft)"/>
+  <path d="M0,288 L110,276 L210,284 L300,270 L370,282 L430,238 L500,276 L580,286 L670,274 L740,284 L820,268 L900,280 L980,258 L1060,276 L1140,220 L1200,258 L1200,326 L0,326 Z" fill="#676D71"/>
+  <path d="M0,300 C170,268 330,278 480,268 C660,256 820,274 980,260 C1080,252 1150,258 1200,252 L1200,360 L0,360 Z" fill="url(#sea)" filter="url(#soft)"/>
+  <ellipse cx="300" cy="296" rx="185" ry="9" fill="#FBF7EE" opacity="0.5" filter="url(#soft)"/>
+  <ellipse cx="700" cy="320" rx="215" ry="10" fill="#FBF7EE" opacity="0.45" filter="url(#soft)"/>
+  <ellipse cx="1046" cy="308" rx="160" ry="8" fill="#FBF7EE" opacity="0.4" filter="url(#soft)"/>
+  <path d="M0,360 L0,290 L38,276 L76,296 L114,270 L152,292 L190,268 L228,294 L266,278 L304,302 L342,284 L380,308 L418,290 L456,316 L494,300 L532,326 L570,310 L604,340 L620,360 Z" fill="#1B1712"/>
+  <path d="M790,360 L790,346 L824,330 L852,312 L870,288 L884,264 L902,292 L924,316 L950,332 L986,342 L1020,350 L1058,338 L1100,348 L1140,336 L1180,346 L1200,340 L1200,360 Z" fill="#1B1712"/>
+
+  <g>
+    <path d="M876,245 L882,264 L899,264
+             L892,245 Z" fill="#96682A"/>
+    <path d="M886,245 L899,264 L893,264
+             Z" fill="#7A5320"/>
+    <circle cx="885" cy="240" r="3.6" fill="#1B1712"/>
+    <path d="M874,238 L867,264"
+          stroke="#1B1712" stroke-width="1.9" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <text x="72" y="80" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="16" letter-spacing="2.6"
+        fill="#8A6533">~/setfireonSdom</text>
+  <text x="1128" y="80" text-anchor="end" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="15"
+        letter-spacing="0.4" fill="#8B8177">setfireonsdom.github.io/Blog</text>
+  <text x="68" y="160" font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', 'Times New Roman', serif" font-size="78" font-weight="700"
+        fill="#1A1611" textLength="252" lengthAdjust="spacing">Dwight</text>
+  <rect x="72" y="180" width="82" height="3" rx="1.5" fill="url(#rule)"/>
+  <text x="72" y="216" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans SC', sans-serif" font-size="23" fill="#4B453C">边学边写 · 学到的整理成文章分享</text>
+</svg>
