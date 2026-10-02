@@ -10,7 +10,7 @@
       <stop offset="0" stop-color="#FDF6E6"/>
       <stop offset="1" stop-color="#FDF6E6" stop-opacity="0"/>
     </radialGradient>
-    <linearGradient id="sea" x1="0" y1="252" x2="0" y2="342" gradientUnits="userSpaceOnUse">
+    <linearGradient id="seaG" x1="0" y1="252" x2="0" y2="342" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#F6F0E2" stop-opacity="0"/>
       <stop offset="0.3" stop-color="#F6F0E2" stop-opacity="0.7"/>
       <stop offset="0.72" stop-color="#EAE3D4" stop-opacity="0.96"/>
@@ -20,25 +20,59 @@
       <stop offset="0" stop-color="#A9762E"/>
       <stop offset="1" stop-color="#A9762E" stop-opacity="0.3"/>
     </linearGradient>
-    <filter id="soft" x="-15%" y="-70%" width="130%" height="240%">
+    <filter id="soft" x="-25%" y="-80%" width="150%" height="260%">
       <feGaussianBlur stdDeviation="11"/>
     </filter>
   </defs>
+  <style>
+  @keyframes fogA { from { transform: translateX(-30px) } to { transform: translateX(30px) } }
+  @keyframes fogB { from { transform: translateX(26px) } to { transform: translateX(-26px) } }
+  @keyframes sea  { from { transform: translateX(-40px) } to { transform: translateX(40px) } }
+  @keyframes m1   { from { transform: translateX(-54px) } to { transform: translateX(54px) } }
+  @keyframes m2   { from { transform: translateX(48px) } to { transform: translateX(-48px) } }
+  @keyframes m3   { from { transform: translateX(-66px) } to { transform: translateX(66px) } }
+  @keyframes far  { from { transform: translateX(-11px) } to { transform: translateX(11px) } }
+  @keyframes breathe { 0%, 100% { opacity: .48 } 50% { opacity: .88 } }
+  @keyframes twinkle { 0%, 100% { opacity: .12 } 50% { opacity: .95 } }
+  @keyframes glide { from { transform: translateX(78px) } to { transform: translateX(-78px) } }
+  @keyframes bob   { 0%, 100% { transform: translateY(0) } 50% { transform: translateY(-7px) } }
+
+  .fogA, .fogB, .sea, .m1, .m2, .m3, .far { animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite; animation-direction: alternate; }
+  .fogA { animation-name: fogA; animation-duration: 74s }
+  .fogB { animation-name: fogB; animation-duration: 93s }
+  .sea  { animation-name: sea;  animation-duration: 121s }
+  .m1   { animation-name: m1;   animation-duration: 35s }
+  .m2   { animation-name: m2;   animation-duration: 47s }
+  .m3   { animation-name: m3;   animation-duration: 61s }
+  .far  { animation-name: far;  animation-duration: 163s }
+  .glow { animation-name: breathe; animation-duration: 13s;
+          animation-timing-function: ease-in-out; animation-iteration-count: infinite }
+  .star { animation-name: twinkle; animation-timing-function: ease-in-out;
+          animation-iteration-count: infinite }
+  .glide { animation-name: glide; animation-duration: 64s; animation-timing-function: ease-in-out;
+           animation-iteration-count: infinite; animation-direction: alternate }
+  .bob { animation-name: bob; animation-duration: 5.6s; animation-timing-function: ease-in-out;
+         animation-iteration-count: infinite }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { animation: none !important }
+  }
+  </style>
 
   <rect width="1200" height="360" fill="url(#sky)"/>
-  <rect width="1200" height="360" fill="url(#glow)" opacity="0.55">
-      <animate attributeName="opacity" values="0.55;0.8;0.55" dur="18s"
-               repeatCount="indefinite"/></rect>
+  <g class="glow"><rect width="1200" height="360" fill="url(#glow)" opacity="0.55"/></g>
 
-  <path d="M0,254 L70,246 L140,250 L215,240 L268,246 L330,212 L374,240 L430,248 L500,242 L560,250 L640,202 L708,240 L760,248 L830,242 L900,250 L958,238 L1002,212 L1062,242 L1120,250 L1200,244 L1200,292 L0,292 Z" fill="#ADB5B9"/>
-  <path d="M0,272 C180,252 360,264 540,254 C720,244 900,260 1060,250 L1200,256 L1200,308 L0,308 Z" fill="#F6F0E2" opacity="0.5" filter="url(#soft)"/>
+  <g class="far"><path d="M0,254 L70,246 L140,250 L215,240 L268,246 L330,212 L374,240 L430,248 L500,242 L560,250 L640,202 L708,240 L760,248 L830,242 L900,250 L958,238 L1002,212 L1062,242 L1120,250 L1200,244 L1200,292 L0,292 Z" fill="#ADB5B9"/></g>
+  <g class="fogA"><path d="M-160,272 C-40,250 160,264 360,254 C560,242 760,260 940,250 C1090,242 1230,256 1360,250 L1360,312 L-160,312 Z" fill="#F6F0E2" opacity="0.5" filter="url(#soft)"/></g>
   <path d="M0,270 L90,258 L152,264 L200,226 L264,258 L330,250 L400,262 L470,252 L520,218 L592,254 L660,264 L740,254 L800,262 L880,220 L942,252 L1012,262 L1090,250 L1200,260 L1200,304 L0,304 Z" fill="#8D9397"/>
-  <path d="M0,290 C200,266 400,280 600,270 C800,260 1000,274 1200,266 L1200,330 L0,330 Z" fill="#F6F0E2" opacity="0.5" filter="url(#soft)"/>
+  <g class="fogB"><path d="M-160,292 C-40,266 200,280 400,270 C600,258 820,274 1020,266 C1160,260 1270,268 1360,264 L1360,336 L-160,336 Z" fill="#F6F0E2" opacity="0.5" filter="url(#soft)"/></g>
   <path d="M0,288 L110,276 L210,284 L300,270 L370,282 L430,238 L500,276 L580,286 L670,274 L740,284 L820,268 L900,280 L980,258 L1060,276 L1140,220 L1200,258 L1200,326 L0,326 Z" fill="#676D71"/>
-  <path d="M0,300 C170,268 330,278 480,268 C660,256 820,274 980,260 C1080,252 1150,258 1200,252 L1200,360 L0,360 Z" fill="url(#sea)" filter="url(#soft)"/>
-  <ellipse cx="300" cy="296" rx="185" ry="9" fill="#FBF7EE" opacity="0.5" filter="url(#soft)"/>
-  <ellipse cx="700" cy="320" rx="215" ry="10" fill="#FBF7EE" opacity="0.45" filter="url(#soft)"/>
-  <ellipse cx="1046" cy="308" rx="160" ry="8" fill="#FBF7EE" opacity="0.4" filter="url(#soft)"/>
+  <g class="sea"><path d="M-160,300 C-40,268 170,278 340,268 C540,256 740,274 940,260 C1090,252 1230,258 1360,252 L1360,368 L-160,368 Z" fill="url(#seaG)" filter="url(#soft)"/></g>
+  <ellipse class="m1" cx="660" cy="168" rx="150" ry="5" fill="#FBF7EE" opacity="0.3" filter="url(#soft)"/>
+  <ellipse class="m2" cx="300" cy="296" rx="185" ry="9" fill="#FBF7EE" opacity="0.46" filter="url(#soft)"/>
+  <ellipse class="m3" cx="700" cy="320" rx="215" ry="10" fill="#FBF7EE" opacity="0.4" filter="url(#soft)"/>
+  <ellipse class="m2" cx="1046" cy="308" rx="160" ry="8" fill="#FBF7EE" opacity="0.34" filter="url(#soft)"/>
   <path d="M0,360 L0,290 L38,276 L76,296 L114,270 L152,292 L190,268 L228,294 L266,278 L304,302 L342,284 L380,308 L418,290 L456,316 L494,300 L532,326 L570,310 L604,340 L620,360 Z" fill="#1B1712"/>
   <path d="M790,360 L790,346 L824,330 L852,312 L870,288 L884,264 L902,292 L924,316 L950,332 L986,342 L1020,350 L1058,338 L1100,348 L1140,336 L1180,346 L1200,340 L1200,360 Z" fill="#1B1712"/>
 
@@ -51,7 +85,9 @@
     <path d="M874,238 L867,264"
           stroke="#1B1712" stroke-width="1.9" stroke-linecap="round" fill="none"/>
   </g>
-
+    <g class="glide" style="animation-duration:64s;animation-delay:-0s"><g class="bob" style="animation-delay:-0.0s"><path transform="translate(690,122) scale(1.0)" d="M-9,0 q4.5,-4.2 9,0 q4.5,-4.2 9,0" fill="none" stroke="#5F6569" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/></g></g>
+    <g class="glide" style="animation-duration:86s;animation-delay:-23s"><g class="bob" style="animation-delay:-1.7s"><path transform="translate(792,96) scale(0.72)" d="M-9,0 q4.5,-4.2 9,0 q4.5,-4.2 9,0" fill="none" stroke="#5F6569" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/></g></g>
+    <g class="glide" style="animation-duration:106s;animation-delay:-46s"><g class="bob" style="animation-delay:-3.4s"><path transform="translate(612,148) scale(0.58)" d="M-9,0 q4.5,-4.2 9,0 q4.5,-4.2 9,0" fill="none" stroke="#5F6569" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/></g></g>
   <text x="72" y="80" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="16" letter-spacing="2.6"
         fill="#8A6533">~/setfireonSdom</text>
   <text x="1128" y="80" text-anchor="end" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="15"
