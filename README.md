@@ -5,12 +5,12 @@
 
 ## 做过的东西
 
-- **[PreviewMD](https://github.com/setfireonSdom/PreviewMD)** — 轻量 macOS Markdown 预览器，拖入即渲染 · `Python`
-- **[unlimited-ocr-mlx](https://github.com/setfireonSdom/unlimited-ocr-mlx)** — Apple Silicon 上完全离线的扫描件转 Markdown · `Python` `MLX`
-- **[soft-area-highlight](https://github.com/setfireonSdom/soft-area-highlight)** — 跟随光标的柔光聚光灯，纯 HTML + CSS + 原生 JS · `HTML`
-- **[webnovel-writing](https://github.com/setfireonSdom/webnovel-writing)** — 大语言模型驱动的中文网文写作系统 · `Python`
-- **[iFlow-AutoSearch](https://github.com/setfireonSdom/iFlow-AutoSearch)** — 基于 iFlow CLI 的智能搜索，报告直写 Obsidian · `Python`
-- **[software-map](https://github.com/setfireonSdom/software-map)** — 按任务找软件、看懂产品流程的拆解库 · `TypeScript`
+- **[PreviewMD](https://github.com/setfireonSdom/PreviewMD)** — 轻量 macOS Markdown 预览器，拖入即渲染 · Python
+- **[unlimited-ocr-mlx](https://github.com/setfireonSdom/unlimited-ocr-mlx)** — Apple Silicon 上完全离线的扫描件转 Markdown · Python / MLX
+- **[soft-area-highlight](https://github.com/setfireonSdom/soft-area-highlight)** — 跟随光标的柔光聚光灯，纯 HTML + CSS + 原生 JS
+- **[webnovel-writing](https://github.com/setfireonSdom/webnovel-writing)** — 大语言模型驱动的中文网文写作系统 · Python
+- **[iFlow-AutoSearch](https://github.com/setfireonSdom/iFlow-AutoSearch)** — 基于 iFlow CLI 的智能搜索，报告直写 Obsidian · Python
+- **[software-map](https://github.com/setfireonSdom/software-map)** — 按任务找软件、看懂产品流程的拆解库 · TypeScript
 
 ## 最近在写
 

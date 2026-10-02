@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import html
 import re
+import sys
 import urllib.request
 
 INDEX = "https://setfireonsdom.github.io/Blog/"
@@ -33,7 +34,10 @@ def to_iso_date(text):
 
 
 def main():
-    page = fetch(INDEX)
+    try:
+        page = fetch(INDEX)
+    except Exception as exc:
+        sys.exit(f"could not fetch {INDEX}: {exc} -- README left untouched")
 
     posts = []
     for block in page.split('<div class="quarto-post')[1:]:
@@ -53,6 +57,11 @@ def main():
         posts.append((title, INDEX + path, date))
         if len(posts) >= LIMIT:
             break
+
+    # A Quarto markup change or a flaky fetch would otherwise wipe the section
+    # and leave no trace. Stale entries beat an empty block.
+    if not posts:
+        sys.exit("parsed 0 posts from the index -- README left untouched")
 
     lines = [f"- [{title}]({url})" + (f" · {date}" if date else "") for title, url, date in posts]
     new_block = f"{START}\n" + "\n".join(lines) + f"\n{END}"
