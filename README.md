@@ -1,6 +1,6 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/setfireonSdom/setfireonSdom/main/assets/banner-dark.svg">
-  <img alt="Dwight — 边学边写，学到的整理成文章分享" src="https://raw.githubusercontent.com/setfireonSdom/setfireonSdom/main/assets/banner.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/setfireonSdom/setfireonSdom@main/assets/banner-dark.svg">
+  <img alt="Dwight — 边学边写，学到的整理成文章分享" src="https://cdn.jsdelivr.net/gh/setfireonSdom/setfireonSdom@main/assets/banner.svg">
 </picture>
 
 ## 做过的东西
