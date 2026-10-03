@@ -86,11 +86,6 @@
   <ellipse class="w2" cx="880" cy="176" rx="190" ry="8" fill="#5A6874" opacity="0.24" filter="url(#soft)"/>
   <g class="glow"><rect width="1200" height="360" fill="url(#glow)" opacity="0.55"/></g>
 
-    <g>
-      <circle cx="944" cy="124" r="58" fill="#E9E4D8" opacity="0.13" filter="url(#soft)"/>
-      <circle cx="944" cy="124" r="21" fill="#E9E4D8" opacity="0.55"/>
-      <circle cx="935" cy="117" r="20" fill="#141C22" opacity="0.92"/>
-    </g>
     <circle cx="546" cy="118" r="0.7" fill="#EDE8DC" class="star" style="animation-duration:4.8s;animation-delay:2.4s"/>
     <circle cx="1085" cy="100" r="1.5" fill="#EDE8DC" class="star" style="animation-duration:3.7s;animation-delay:5.0s"/>
     <circle cx="609" cy="124" r="0.8" fill="#EDE8DC" class="star" style="animation-duration:4.5s;animation-delay:3.7s"/>
