@@ -62,10 +62,25 @@
   .star { animation-name: twinkle; animation-timing-function: ease-in-out;
           animation-iteration-count: infinite }
 
+  /* One file, two compositions. A media query inside an SVG loaded as an image
+     resolves against the rendered box, so this tracks the real column width --
+     verified: fires at 319px, not at 1200px.
+     NB no angle brackets in this comment: the SVG is parsed as XML. */
+  .type-narrow { display: none }
+  @media (max-width: 620px) {
+    .type-wide { display: none }
+    .type-narrow { display: block }
+    /* push the horizon into the bottom third so the type keeps clear sky;
+       the mesa lands right-of-centre at canvas x ~780 */
+    .scene { transform: translate(-811px, -175px) scale(1.8) }
+    .birds, .stars { display: none }
+  }
+
   @media (prefers-reduced-motion: reduce) { * { animation: none !important } }
   </style>
 
   <g clip-path="url(#round)">
+  <g class="scene">
   <rect width="1200" height="360" fill="url(#sky)"/>
   <ellipse class="w1" cx="520" cy="128" rx="150" ry="9" fill="#FFFFFF" opacity="0.3" filter="url(#soft)"/>
   <ellipse class="w2" cx="880" cy="176" rx="190" ry="8" fill="#FFFFFF" opacity="0.24" filter="url(#soft)"/>
@@ -93,12 +108,23 @@
       <path d="M1.1,-20.5 L2.9,-20.5 L4.1,-9.5 L5.4,-1.2 L1.6,-0.8 Z" fill="#7A5320"/>
       <circle cx="0" cy="-23.6" r="2.7" fill="#221C16"/>
     </g>
+  <g class="birds">
     <g class="glide" style="animation-duration:15s;animation-delay:-0s"><g class="bob" style="animation-delay:-0.0s"><path transform="translate(660,118) scale(1.15)" d="M-10,0 q5,-4.6 10,0 q5,-4.6 10,0" fill="none" stroke="#5F6569" stroke-width="1.6" stroke-linecap="round" opacity="0.62"/></g></g>
     <g class="glide" style="animation-duration:20s;animation-delay:-6s"><g class="bob" style="animation-delay:-1.1s"><path transform="translate(792,92) scale(0.82)" d="M-10,0 q5,-4.6 10,0 q5,-4.6 10,0" fill="none" stroke="#5F6569" stroke-width="1.6" stroke-linecap="round" opacity="0.62"/></g></g>
     <g class="glide" style="animation-duration:26s;animation-delay:-12s"><g class="bob" style="animation-delay:-2.2s"><path transform="translate(588,146) scale(0.66)" d="M-10,0 q5,-4.6 10,0 q5,-4.6 10,0" fill="none" stroke="#5F6569" stroke-width="1.6" stroke-linecap="round" opacity="0.62"/></g></g>
+  </g>
+  </g>
+  <g class="type-wide">
   <text x="52" y="148" font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', 'Times New Roman', serif" font-size="78" font-weight="700"
         fill="#191510" textLength="252" lengthAdjust="spacing">Dwight</text>
   <rect x="56" y="172" width="78" height="3" rx="1.5" fill="url(#rule)"/>
   <text x="56" y="210" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans SC', sans-serif" font-size="23" fill="#4B453C">边学边写 · 学到的整理成文章分享</text>
+  </g>
+  <g class="type-narrow">
+  <text x="56" y="115" font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', 'Times New Roman', serif" font-size="86" font-weight="700"
+        fill="#191510" textLength="300" lengthAdjust="spacing">Dwight</text>
+  <rect x="56" y="145" width="104" height="5" rx="2.5" fill="url(#rule)"/>
+  <text x="56" y="205" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans SC', sans-serif" font-size="44" fill="#4B453C">边学边写 · 学到的整理成文章分享</text>
+  </g>
   </g>
 </svg>
